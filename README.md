@@ -1,4 +1,4 @@
-# 🔐 Jogo de Adivinhação da Senha (Estilo Cofre)
+# 🔐 Descubra a Senha!
 
 Este projeto é um simples jogo de terminal em Python onde o jogador tem 5 tentativas para descobrir uma senha secreta de 4 dígitos gerada aleatoriamente.
 
@@ -55,6 +55,18 @@ Existem 2 dígito(s) correto(s), mas na posição ERRADA.
 - Conversão para lista de dígitos para comparação.
 - Validação da entrada do usuário.
 - Contagem de acertos com base em posição e valor.
+
+## 📈 Melhorias Futuras
+
+- [ ] Permitir que o usuário escolha o nível de dificuldade:
+  - Fácil: senha com 3 dígitos e 6 tentativas.
+  - Médio: senha com 4 dígitos e 5 tentativas.
+  - Difícil: senha com 5 dígitos e apenas 4 tentativas.
+- [ ] Exibir histórico de palpites e feedbacks após cada rodada.
+- [ ] Implementar interface gráfica com `tkinter` ou versão web com `Flask`.
+- [ ] Adicionar modo "versus" (jogador x jogador).
+- [ ] Permitir salvar o resultado da sessão (sucesso ou falha) em um arquivo `.txt`.
+- [ ] Mostrar tempo total gasto ao final do jogo.
 
 ## 📄 Licença
 
