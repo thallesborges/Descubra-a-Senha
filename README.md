@@ -31,10 +31,10 @@ Após 5 tentativas sem sucesso, o "cofre" é bloqueado.
 No terminal:
 
 ```bash
-python nome_do_arquivo.py
+python descubra_a_senha.py
 ```
 
-Substitua `nome_do_arquivo.py` pelo nome real do arquivo do script.
+Se caso alterar o nome do arquivo, substitua `descubra_a_senha.py` pelo nome real do arquivo do script.
 
 ## 🧠 Exemplo de Saída
 
@@ -48,22 +48,21 @@ Existem 2 dígito(s) correto(s), mas na posição ERRADA.
 ## 📌 Regras
 
 - A senha é composta por 4 dígitos numéricos (entre 0000 e 9999).
-- Dígitos podem se repetir.
+- Dígitos não se repetem.
 - Entradas inválidas (não numéricas ou com número incorreto de dígitos) são rejeitadas com mensagens de erro.
 
 ## 📂 Estrutura do Código
 
-- `random.randint(0, 9999)`: Gera a senha.
-- Conversão para lista de dígitos para comparação.
+- Geração da senha aleatória usando `random.randint(0, 9999).zfill(4)`.
+- Conversão da senha e do palpite em listas de dígitos para comparação.
 - Validação da entrada do usuário.
-- Contagem de acertos com base em posição e valor.
+- Contagem e feedback dos dígitos corretos na posição correta e na posição errada.
 
 ## 📈 Melhorias Futuras
 
-- [ ] Permitir que o usuário escolha o nível de dificuldade:
-  - Fácil: senha com 3 dígitos e 6 tentativas.
-  - Médio: senha com 4 dígitos e 5 tentativas.
-  - Difícil: senha com 5 dígitos e apenas 4 tentativas.
+- [ ] Permitir escolha de nível de dificuldade, alterando:
+  - tamanho da senha (3 a 5 dígitos);
+  - quantidade de tentativas.
 - [ ] Exibir histórico de palpites e feedbacks após cada rodada.
 - [ ] Implementar interface gráfica com `tkinter` ou versão web com `Flask`.
 - [ ] Adicionar modo "versus" (jogador x jogador).
@@ -73,3 +72,5 @@ Existem 2 dígito(s) correto(s), mas na posição ERRADA.
 ## 📄 Licença
 
 Este projeto é livre para uso pessoal ou educacional.
+
+Desenvolvido por [Thalles Borges](https://www.linkedin.com/in/thalles-borges-728062292/).
