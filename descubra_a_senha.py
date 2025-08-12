@@ -1,11 +1,13 @@
 import random
 
-senha = str(random.randint(0, 9999))
-digitos_senha = []
 
-for i in senha:
-    digitos_senha.append(int(i))
+while True:
+    senha = str(random.randint(0, 9999)).zfill(4)
+    digitos_senha = list(senha)
 
+    if len(digitos_senha) == len(set(digitos_senha)):
+        break
+    
 tentativa = 1
 while tentativa <= 5:
     print(f'== Tentativa ({tentativa}/5) ==')
@@ -16,7 +18,7 @@ while tentativa <= 5:
             if len(palpite) != 4:
                 print('!! Por favor, insira uma senha númerica de 4 dígitos.')
                 continue
-            
+    
             try:  
                 digitos_palpite = [int(digito) for digito in palpite]
                 break
@@ -47,13 +49,10 @@ while tentativa <= 5:
         print('Cofre aberto com sucesso!')
         break
     
-    elif tentativa == 6:
-        print('Tentativas esgotadas. Cofre bloqueado!')
-        break
-    
     else:
         print(f'Existem {digitos_certos_posicao_correta} dígito(s) correto(s) e na posição CORRETA.')
         print(f'Existem {digitos_certos_posicao_errada} dígito(s) correto(s), mas na posição ERRADA. ')
         tentativa += 1
-    
 
+print('== Tentativas esgotadas. Cofre bloqueado! 🔐')
+print(f'A senha era: {senha}')
