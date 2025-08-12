@@ -10,7 +10,8 @@ O objetivo é adivinhar corretamente todos os 4 dígitos da senha, na ordem cert
 - Quantos dígitos estão **corretos, mas na posição errada**.
 
 Após 5 tentativas sem sucesso, o "cofre" é bloqueado.
-_Obs.: a senha nunca terá dígitos repetidos._ 
+
+**💡 Observação: a senha nunca terá dígitos repetidos.** 
 
 ## 🚀 Como Jogar
 
