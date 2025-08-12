@@ -7,9 +7,10 @@ Este projeto é um simples jogo de terminal em Python onde o jogador tem 5 tenta
 O objetivo é adivinhar corretamente todos os 4 dígitos da senha, na ordem certa. A cada tentativa, o programa informa:
 
 - Quantos dígitos estão **corretos e na posição correta**.
-- Quantos dígitos estão **corretos, mas em posição errada**.
+- Quantos dígitos estão **corretos, mas na posição errada**.
 
 Após 5 tentativas sem sucesso, o "cofre" é bloqueado.
+_Obs.: a senha nunca terá dígitos repetidos._ 
 
 ## 🚀 Como Jogar
 
